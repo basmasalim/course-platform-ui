@@ -1,0 +1,32 @@
+.comment-item {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.comment-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 80px; /* Align with comment content */
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+.comment-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.comment-avatar {
+  flex-shrink: 0;
+}
+
+textarea {
+  box-shadow: var(--shadow);
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 3px transparent !important;
+  border-color: #e2e8f0;
+}

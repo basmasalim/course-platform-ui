@@ -1,0 +1,54 @@
+<section>
+  <h2 class="my-5">Course Materials</h2>
+  <div class="materials-container">
+    <div class="row g-0">
+      <!-- First Column -->
+      <div class="col-lg-6 px-4 pb-0 pt-3">
+        <ul class="materials-list p-0 m-0">
+          @for (course of courseMaterials; track $index) {
+          <li class="material-item">
+            <figure class="d-flex align-items-center w-100">
+              <img
+                [src]="course.src"
+                [alt]="course.title"
+                width="25"
+                class="material-icon"
+              />
+              <figcaption
+                class="d-flex justify-content-between w-100 fs-5 ms-3 text-muted"
+              >
+                <span class="material-title">{{ course.title }}:</span>
+                <span class="material-value">{{ course.description }}</span>
+              </figcaption>
+            </figure>
+          </li>
+          }
+        </ul>
+      </div>
+
+      <!-- Second Column -->
+      <div class="col-lg-6 px-4 pb-0 pt-3">
+        <ul class="materials-list p-0 m-0">
+          @for (course of courseMaterials; track $index) {
+          <li class="material-item">
+            <figure class="d-flex align-items-center w-100">
+              <img
+                [src]="course.src"
+                [alt]="course.title"
+                width="25"
+                class="material-icon"
+              />
+              <figcaption
+                class="d-flex justify-content-between w-100 fs-5 ms-3 text-muted"
+              >
+                <span class="material-title">{{ course.title }}:</span>
+                <span class="material-value">{{ course.description }}</span>
+              </figcaption>
+            </figure>
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

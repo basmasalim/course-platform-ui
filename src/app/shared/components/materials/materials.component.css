@@ -1,0 +1,19 @@
+.materials-container {
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.material-item {
+  position: relative;
+  padding: 7px;
+}
+
+.material-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 92%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.125);
+}

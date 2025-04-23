@@ -1,0 +1,44 @@
+<section class="comments-section">
+  <h2 class="comments-title my-5">Comments</h2>
+
+  <div class="comments-list">
+    @for (comment of commentsInfo; track $index) {
+    <div class="comment-item">
+      <div class="comment-container">
+        <!-- User Avatar -->
+        <div class="comment-avatar">
+          <img
+            [src]="comment.src"
+            class="avatar-image rounded-circle"
+            [alt]="'Avatar of ' + comment.name"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Comment Content -->
+        <div class="comment-body text-muted">
+          <h6 class="comment-author">{{ comment.name }}</h6>
+          <time class="comment-date">{{ comment.date }}</time>
+          <p>{{ comment.comment }}</p>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+  <div class="comment-form mt-4">
+    <form>
+      <textarea
+        class="comment-input form-control"
+        placeholder="Write your comment here..."
+        rows="5"
+        spellcheck="true"
+      ></textarea>
+      <button type="submit" class="submit-btn btn btn-primary mt-3">
+        Post Comment
+      </button>
+    </form>
+  </div>
+</section>

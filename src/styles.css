@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* ===== Base Styles ===== */
+:root {
+  /* Colors */
+  --color-primary: #e6e6e6;
+  --color-sec: #6abd8a;
+  --color-bg: #f5f9fa;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-minutes: #ef233c;
+
+  /* border */
+  --border-color: #e1e3e1;
+
+  /* Font */
+  --font-main: "Inter", sans-serif;
+
+  /* Radius & Shadow */
+  --radius: 7px;
+  --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #545454;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
