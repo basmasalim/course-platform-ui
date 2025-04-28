@@ -4,10 +4,11 @@ import { TopicsComponent } from "../../../shared/components/topics/topics.compon
 import { HeaderIconComponent } from "../../components/header-icon/header-icon.component";
 import { MaterialsComponent } from "../../../shared/components/materials/materials.component";
 import { CommentsComponent } from "../../components/comments/comments.component";
+import { ProgressComponent } from "../../components/progress/progress.component";
 
 @Component({
   selector: 'app-home',
-  imports: [VideoComponent, TopicsComponent, HeaderIconComponent, MaterialsComponent, CommentsComponent],
+  imports: [VideoComponent, TopicsComponent, HeaderIconComponent, MaterialsComponent, CommentsComponent, ProgressComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
